@@ -62,7 +62,7 @@ function ProductCard(props){
       gap: "10px", 
     }}>
     {products.map((el)=>(
-      <button style={{ display: "flex", width: "200px", border: "solid", gap: "5px", backgroundColor: `${el.color}`}}
+      <button style={{ display: "flex", width: "200px", border: "solid", gap: "5px", backgroundColor: `${el.color}`,alignItems:"center",justifyContent:"center",color:"white"}}
       onClick={()=>hdlClick(el)}
       >
       {el.img}
@@ -77,7 +77,7 @@ function ProductCard(props){
 
 function Card ({icon,name,price}){
   return(
-    <div style={{ width: "100%", display: "flex", justifyContent: "space-evenly" }}>
+    <div style={{ width: "100%", display: "flex", justifyContent: "space-evenly" ,alignItems:"center"}}>
       <div>{icon}</div>
       <div>{name}</div> 
       <div>{price}</div>

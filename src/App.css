@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Cal+Sans&family=Dancing+Script:wght@400..700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
 html,
 body {
+  margin-top: 50px;
   font-family: 'Dancing Script';
   display: flex;
   justify-content: center;
