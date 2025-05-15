@@ -1,10 +1,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Cal+Sans&family=Dancing+Script:wght@400..700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
 
-html,
-body {
-  margin-top: 50px;
+html{
   font-family: 'Dancing Script';
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;               /* Move left edge to center of viewport */
+  transform: translateX(-50%);  /* Shift left by half its width to truly center */
+  width: 60%;
+  height: 50px;
+  background-color: rgb(87, 193, 235);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 1000; 
+  font-size: 30px;
+}
+
+
+.contain{
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   height: 100%;
@@ -77,4 +96,24 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.button {
+  background-color: rgb(3, 83, 115);
+  margin: 10px;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Dancing Script';
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(87, 193, 235);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }

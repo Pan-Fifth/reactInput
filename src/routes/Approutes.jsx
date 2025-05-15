@@ -1,34 +1,26 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { Route, Routes } from "react-router";
 import Shopping from "../pages/Shopping";
 import Form from "../pages/Form";
 import LocalUserSearch from "../pages/Search";
 import Toggle from "../pages/Toggle";
 import ImageSlide from "../pages/ImageSlide";
+import Layout from "../components/Layout";
 
+const AppRouter = () => {
+    return (
 
-const routers = createBrowserRouter([
-    {
-        path:"/", element : <Form/>
-    },
-    {
-        path:"/cart",element: <Shopping/>
-    },
-    {
-        path:"/search",element: <LocalUserSearch/>
-    },
-    {
-        path:"/image",element: <ImageSlide/>
-    },
-    {
-        path:"/toggle",element: <Toggle/>
-    },
-])
+        <Routes>
+            <Route path="/" element={<Layout/>}>
 
-const AppRouter =()=>{
-    return(
-        <div>
-            <RouterProvider router= {routers}/>
-        </div>
+                <Route index element={<Form />} />
+                <Route path="/cart" element={<Shopping />} />
+                <Route path="/search" element={<LocalUserSearch />} />
+                <Route path="/image" element={<ImageSlide />} />
+                <Route path="/toggle" element={<Toggle />} />
+
+            </Route>
+        </Routes>
+
     )
 }
 

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Navigation from '../components/Navigation';
 
 const Toggle = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -18,7 +17,6 @@ const Toggle = () => {
 
     return (
         <div>
-            <Navigation />
             <div>
             <label class="switch">
                 <input type="checkbox" onChange={toggleTheme}/>

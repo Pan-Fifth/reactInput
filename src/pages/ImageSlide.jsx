@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import Navigation from "../components/Navigation"
 import { ArrowBigLeft ,ArrowBigRight} from "lucide-react";
 
 const ImageSlide = () => {
@@ -29,7 +28,6 @@ const ImageSlide = () => {
     console.log(index)
   return (
     <div>
-        <Navigation/>
         <div style={{display:'flex', justifyContent:"space-between",marginBottom:"15px",alignItems:"center"}}>
             <ArrowBigLeft onClick={hdlPrevious}>Previous</ArrowBigLeft>
             <img src={imageList[index]} width={"600px"} height={"450px"}/>

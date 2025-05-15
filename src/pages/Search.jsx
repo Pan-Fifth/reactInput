@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navigation from '../components/Navigation';
 
 const mockUsers = [
   { id: 1, name: 'John Doe' },
@@ -17,7 +16,6 @@ function LocalUserSearch() {
 
   return (
     <div>
-        <Navigation/>
       <h2>ค้นหาชื่อผู้ใช้</h2>
       <input
         type="text"

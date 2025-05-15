@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import { Grape ,Citrus,Apple,Banana,Cherry,Fish} from "lucide-react";
-import Navigation from '../components/Navigation';
 
 
 function Shopping(){
@@ -22,7 +21,6 @@ function Shopping(){
 
   return(
     <div id ="container">
-    <Navigation/>        
     <div >
     <ProductCard products = {products}  setPick={setPick} pick={pick} total={total} setTotal={setTotal}/>
     </div>

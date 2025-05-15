@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import Navigation from '../components/Navigation';
+
 
 const Form = () => {
 const [output, setOutput] = useState({
@@ -50,7 +50,6 @@ const [output, setOutput] = useState({
   console.log("output",output)
   return(
     <div className="container">
-      <Navigation/>
       <div className="input" >
         <p >Name:</p>
         <input
@@ -129,8 +128,8 @@ const [output, setOutput] = useState({
         <label for='color'>Blue</label>
       </div>
 
-      <button onClick = {hdlOnClick}>Submit</button>
-      <button onClick={hdlClear} >Clear</button>
+      <button className='button' onClick = {hdlOnClick}>Submit</button>
+      <button className= 'button' onClick={hdlClear} >Clear</button>
       <hr/>
 
       {error && <p style={{ color: "red" }}>{error}</p>}
