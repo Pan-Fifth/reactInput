@@ -9,18 +9,24 @@ html{
   top: 0;
   left: 50%;               /* Move left edge to center of viewport */
   transform: translateX(-50%);  /* Shift left by half its width to truly center */
-  width: 60%;
+  width: 70%;
   height: 50px;
   background-color: rgb(87, 193, 235);
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 0;
+  padding: 20px 0;
   z-index: 1000; 
   font-size: 30px;
 }
-
+.navbut{
+  color: white;
+}
+.sep{
+  margin: 0 0 10px 10px;
+  color: rgb(3, 83, 115);
+}
 
 .contain{
   margin-top: 100px;

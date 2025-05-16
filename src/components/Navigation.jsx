@@ -3,11 +3,15 @@ import { Link } from "react-router"
 function Navigation() {
   return (
     <nav className="navbar">
-      <Link to ='/' style={{color:"white"}}>Form</Link>
-      <Link to ='/cart' style={{color:"white"}}>Cart</Link>
-      <Link to ='/search' style={{color:"white"}}>Search</Link>
-      <Link to ='/image' style={{color:"white"}}>Image Carousel</Link>
-      <Link to ='/toggle' style={{color:"white"}}>Toggle Theme</Link>
+      <Link to ='/' className="navbut">Form</Link>
+      <p className="sep">|</p>
+      <Link to ='/cart' className="navbut">Cart</Link>
+      <p className="sep">|</p>
+      <Link to ='/search' className="navbut">Search</Link>
+      <p className="sep">|</p>
+      <Link to ='/image' className="navbut">Image Carousel</Link>
+      <p className="sep">|</p>
+      <Link to ='/toggle' className="navbut">Toggle Theme</Link>
     </nav>
 
   )
