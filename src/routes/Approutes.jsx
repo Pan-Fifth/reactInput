@@ -11,7 +11,6 @@ const AppRouter = () => {
 
         <Routes>
             <Route path="/" element={<Layout/>}>
-
                 <Route index element={<Form />} />
                 <Route path="/cart" element={<Shopping />} />
                 <Route path="/search" element={<LocalUserSearch />} />
