@@ -1,17 +1,17 @@
-import { Link } from "react-router"
+import { Link, NavLink } from "react-router"
 
 function Navigation() {
   return (
     <nav className="navbar">
-      <Link to ='/' className="navbut">Form</Link>
+      <NavLink to ='/' className="navbut">Form</NavLink>
       <p className="sep">|</p>
-      <Link to ='/cart' className="navbut">Cart</Link>
+      <NavLink to ='/cart' className="navbut">Cart</NavLink>
       <p className="sep">|</p>
-      <Link to ='/search' className="navbut">Search</Link>
+      <NavLink to ='/search' className="navbut">Search</NavLink>
       <p className="sep">|</p>
-      <Link to ='/image' className="navbut">Image Carousel</Link>
+      <NavLink to ='/image' className="navbut">Image Carousel</NavLink>
       <p className="sep">|</p>
-      <Link to ='/toggle' className="navbut">Toggle Theme</Link>
+      <NavLink to ='/toggle' className="navbut">Toggle Theme</NavLink>
     </nav>
 
   )
